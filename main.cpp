@@ -6,28 +6,28 @@
 // inline any short function
 
 #include <iostream>
+#include <vector>
+
 using namespace std;
 
 const int N = 40;
 
-inline void sum(int*p, int n, int d[])
+inline void sum(int *p, vector<int> d)
 {
-	int i;
-
 	*p = 0;
-	for(i = 0; i < n; ++i)
+	for(int i : d)
 		*p = *p + d[i];
 }
 
 int main()
 {
-	int i;
 	int accum = 0;
-	int data[N];
+	vector<int> data;
 
-	for(i = 0; i < N; ++i)
-		data[i] = i;
-	sum(&accum, N, data);
+	for(int i = 0; i < N; ++i)
+		data.push_back(i);
+
+	sum(&accum, data);
 	cout << "sum is " << accum << endl;
 
 	return 0;
