@@ -6,7 +6,8 @@
  * inline any short function
  */
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 #define N 40
 
@@ -28,7 +29,7 @@ int main()
 	for(i = 0; i < N; ++i)
 		data[i] = i;
 	sum(&accum, N, data);
-	printf("sum is %d\n", accum);
+	cout << "sum is " << accum << endl;
 
 	return 0;
 }
