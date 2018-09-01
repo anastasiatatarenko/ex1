@@ -1,10 +1,9 @@
-/* Convert this program to C++
- * change to C++ io
- * change to one line comments
- * change defines of constants to const
- * change array to vector<>
- * inline any short function
- */
+// Convert this program to C++
+// change to C++ io
+// change to one line comments
+// change defines of constants to const
+// change array to vector<>
+// inline any short function
 
 #include <iostream>
 using namespace std;
